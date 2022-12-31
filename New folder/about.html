@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="bootstrap-4.5.3-dist/css/bootstrap.min.css">
+    <script src="jquery-3.5.1.min.js"></script>
+   <script src="bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
+    <style>
+        #about{
+    margin-top: 50px;   
+}
+#about h1{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+    color: #292727;
+    text-shadow: 1px 1px 1px black;
+    border-bottom: 2px solid rgba(161,109,14,1);
+}
+#about .card{
+    margin-top: 20px;
+    box-shadow: 0px 0px 5px black;
+   
+}
+#about p{
+    margin-top: 20px;
+    color:black;
+    text-shadow: 1px 1px 1px gray;
+    font-weight: bold;
+}
+#bt button{
+    width: 150px;
+    height: 32px;
+    letter-spacing: 3px;
+    background-color: rgba(161,109,14,1);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+#product-cards h1{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+    color: #292727;
+    text-shadow: 1px 1px 1px black;
+    border-bottom: 2px solid rgba(161,109,14,1);
+}
+#product-cards .card{
+    background-color: rgba(161,109,14,1);
+    box-shadow: 0 0 3px black;
+    border-radius: 5px;
+    cursor: pointer;
+    
+   
+}
+.overlay{
+    display: block;
+    opacity: 0;
+    position: absolute;
+    top: 10%;
+    margin-left: 0;
+    width: 70px;
+}
+#product-cards .card:hover .overlay{
+    opacity: 1;
+    margin-left: 5%;
+    transition: 0.5s ease;
+}
+.overlay i img{
+    background-color: #2e1700;
+    height: 30px;
+    width: 30px;
+    font-size: 20px;
+    padding: 7px;
+    margin: -20%;
+    margin-bottom: 5%;
+    cursor: pointer;
+}
+.overlay .btn-secondary{
+    background: transparent !important;
+    border: none;
+    box-shadow: none;
+}
+#product-cards h3{
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+#product-cards h5{
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+#product-cards p{
+    color: #2e1700;
+    font-weight: bold;
+}
+#product-cards h6{
+    font-size: 20px;
+    color: #2e1700;
+    font-weight: bold;
+}
+#product-cards h6 span button{
+    width: 100px;
+    height: 26px;
+    font-size: 15px;
+    background: transparent;
+    letter-spacing: 3px;
+    border: 2px solid #573818;
+    border-radius: 5px;
+    float: right;
+    font-weight: bold;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#product-cards h6 span button:hover{
+    background-color: #2e1700;
+    color: white;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container" id="about">
+      
+        <h1>ABOUT US</h1>
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-12">
+                <div class="card">
+                    <video src="New video.mp4" loop autoplay muted></video>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-3 col-sm-12">
+                    <p>Looking for crystal-clear waters ripe with snorkeling adventures surrounded by palm trees and mountains just waiting to be explored? beauty of beaches is calling your name.</p>
+                <!-- <div id="bt"><button>Read More...</button></div> -->
+            </div>
+        </div>
+      </div> 
+      <section id="product-cards">
+       
+      <div class="container">
+        <h1>our team</h1>
+        <div class="row" style="margin-top:50px;">
+           <div class="col-lg-4 col-md-3 col-sm-12">
+            <div class="card">
+                <div class="overlay">
+                    <button type="button" class="btn btn-secondary"><i><img src="./image/views.png" alt="" width="30px"></i></button>
+                    <button type="button" class="btn btn-secondary"><i><img src="./image/heart.png" alt="" width="30px"></i></button>
+                    <button type="button" class="btn btn-secondary"><i><img src="./image/add.png" alt="" width="30px"></i></button>
+                </div>
+                <img src="photo-1507591064344-4c6ce005b128.jpg" alt="">
+                <div class="card-body">
+                    <h3>hamza</h3>
+                    <h5>founder</h5>
+                    <p>Hanif Bhatti is the visionary behind PakWheels.com who single handedly started the portal from his basement.</p>
+                </div>
+            </div>
+           </div>
+           <div class="col-lg-4 col-md-3 col-sm-12">
+            <div class="card">
+                <div class="overlay">
+                    <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="./image/views.png" alt="" width="30px"></i></button>
+                    <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="./image/heart.png" alt="" width="30px"></i></button>
+                    <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="./image/add.png" alt="" width="30px"></i></button>
+                </div>
+                <img src="photo-1507591064344-4c6ce005b128.jpg" alt="">
+                <div class="card-body">
+                    <h3>azan</h3>
+                    <h5>ceo</h5>
+                    
+                    <p>Hanif Bhatti is the visionary behind PakWheels.com who single handedly started the portal from his basement.</p>
+                </div>
+            </div>
+           </div>
+           <div class="col-lg-4 col-md-3 col-sm-12">
+            <div class="card">
+                <div class="overlay">
+                    <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="./image/views.png" alt="" width="30px"></i></button>
+                    <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="./image/heart.png" alt="" width="30px"></i></button>
+                    <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="./image/add.png" alt="" width="30px"></i></button>
+                </div>
+                <img src="photo-1507591064344-4c6ce005b128.jpg" alt="">
+                <div class="card-body">
+                    <h3>azan</h3>
+                    <h5>ceo</h5>
+                    
+                    <p>Hanif Bhatti is the visionary behind PakWheels.com who single handedly started the portal from his basement.</p>
+                </div>
+            </div>
+           </div>
+        </section>
+</body>
+</html>
